@@ -1,0 +1,29 @@
+[gd_scene load_steps=2 format=3 uid="uid://d1738mlfftg70"]
+
+[ext_resource type="Script" uid="uid://bwl5cn46oduuc" path="res://dead_screen.gd" id="1_dr071"]
+
+[node name="DeadScreen" type="CanvasLayer"]
+script = ExtResource("1_dr071")
+
+[node name="ColorRect" type="ColorRect" parent="."]
+offset_left = 351.0
+offset_top = 226.0
+offset_right = 724.0
+offset_bottom = 403.0
+color = Color(0, 0, 0, 0.027451)
+
+[node name="Label" type="Label" parent="."]
+offset_left = 439.0
+offset_top = 257.0
+offset_right = 625.0
+offset_bottom = 362.0
+text = "You ded"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Button" type="Button" parent="."]
+offset_left = 494.0
+offset_top = 325.0
+offset_right = 573.0
+offset_bottom = 356.0
+text = "Try again"
