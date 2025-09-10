@@ -1,0 +1,15 @@
+[gd_scene load_steps=3 format=3 uid="uid://bpef2hphqrn8o"]
+
+[ext_resource type="Script" uid="uid://bysqpgunc3g3i" path="res://start_screen.gd" id="1_ncxyx"]
+[ext_resource type="Texture2D" uid="uid://dpis4onrwk0nl" path="res://images/Group 6(4).png" id="2_pevhg"]
+
+[node name="CanvasLayer" type="CanvasLayer"]
+process_mode = 2
+script = ExtResource("1_ncxyx")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(561, 324)
+
+[node name="Group6(4)" type="Sprite2D" parent="."]
+position = Vector2(561, 323)
+texture = ExtResource("2_pevhg")

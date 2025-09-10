@@ -5,8 +5,8 @@
 [ext_resource type="Texture2D" uid="uid://doolce7lw0xf3" path="res://Group 3.png" id="3_i3pqv"]
 [ext_resource type="Texture2D" uid="uid://cb4gji8h0ykfc" path="res://images/Ellipse 1.png" id="4_hqtel"]
 
-[sub_resource type="CircleShape2D" id="CircleShape2D_sweqy"]
-radius = 1.0
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_hqtel"]
+size = Vector2(2, 2)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_onrkg"]
 size = Vector2(4, 4)
@@ -17,9 +17,18 @@ radius = 5.09902
 [node name="Player" type="CharacterBody2D"]
 collision_mask = 6
 script = ExtResource("1_onrkg")
+speed = null
+dash_speed = null
+dash_time = null
+shoot_cooldown = null
+boom_scale = null
+grow_speed = null
+shrink_speed = null
+boom_cooldown = null
+invincible_cd = null
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-shape = SubResource("CircleShape2D_sweqy")
+shape = SubResource("RectangleShape2D_hqtel")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
 visible = false
@@ -51,7 +60,6 @@ wait_time = 4.0
 
 [node name="invinsible_cd" type="Timer" parent="."]
 wait_time = 2.5
-one_shot = true
 
 [node name="invincible_cooldown" type="Timer" parent="."]
 wait_time = 5.0

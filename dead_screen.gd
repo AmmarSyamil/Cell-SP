@@ -8,12 +8,14 @@ func _ready():
 	process_mode = PROCESS_MODE_ALWAYS
 	restart_button.pressed.connect(_on_restart_button_pressed)
 
-func show_death_message(reason: String):
+func show_death_message(reason: String, score: int):
 	death_label.text = reason
 	death_label.visible = true
 	restart_button.visible = true
 	restart_button.disabled = false
 	restart_button.grab_focus() 
+	$score.text = "ur score is: " + str(score)
+	
 
 
 

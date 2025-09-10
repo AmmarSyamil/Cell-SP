@@ -22,34 +22,11 @@ text = "Your score: 0"
 wait_time = 0.578
 
 [node name="Boom_cd" type="Label" parent="."]
-offset_left = 15.0
-offset_top = 42.0
-offset_right = 55.0
-offset_bottom = 65.0
-text = "Boom cooldown: "
+offset_left = 22.0
+offset_top = 44.0
+offset_right = 62.0
+offset_bottom = 67.0
+text = "niga"
 
 [node name="Timer_boom_cd" type="Timer" parent="."]
 wait_time = 0.1
-
-[node name="Invincible_cd" type="Label" parent="."]
-offset_left = 14.0
-offset_top = 62.0
-offset_right = 60.0
-offset_bottom = 85.0
-text = "Invincible cooldown: "
-
-[node name="Timer_invincible_cd" type="Timer" parent="."]
-wait_time = 0.1
-
-[node name="Timer_at_invincible" type="Timer" parent="."]
-wait_time = 0.1
-
-[node name="Invincible_at" type="Label" parent="."]
-offset_left = 16.0
-offset_top = 85.0
-offset_right = 139.0
-offset_bottom = 108.0
-text = "Invincible time: "
-
-[node name="Timer_start" type="Timer" parent="."]
-wait_time = 0.5

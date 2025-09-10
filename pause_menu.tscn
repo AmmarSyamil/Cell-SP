@@ -1,0 +1,19 @@
+[gd_scene load_steps=3 format=3 uid="uid://drbt6pcexk54a"]
+
+[ext_resource type="Script" uid="uid://p4vaolueklov" path="res://pause_menu.gd" id="1_hdmo1"]
+[ext_resource type="Texture2D" uid="uid://dcvs3c3ru7ta7" path="res://images/Group 6(3).png" id="2_nwcfo"]
+
+[node name="pause_menu" type="CanvasLayer"]
+process_mode = 3
+script = ExtResource("1_hdmo1")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(693, 334)
+texture = ExtResource("2_nwcfo")
+
+[node name="RichTextLabel" type="RichTextLabel" parent="."]
+offset_left = 597.0
+offset_top = 424.0
+offset_right = 818.0
+offset_bottom = 464.0
+text = "click anywhere to continue"

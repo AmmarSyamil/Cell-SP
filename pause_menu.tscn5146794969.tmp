@@ -1,0 +1,28 @@
+[gd_scene load_steps=2 format=3 uid="uid://drbt6pcexk54a"]
+
+[ext_resource type="Script" uid="uid://p4vaolueklov" path="res://pause_menu.gd" id="1_hdmo1"]
+
+[node name="pause_menu" type="CanvasLayer"]
+process_mode = 2
+script = ExtResource("1_hdmo1")
+
+[node name="ColorRect" type="ColorRect" parent="."]
+offset_left = 427.0
+offset_top = 204.0
+offset_right = 775.0
+offset_bottom = 441.0
+color = Color(1, 1, 1, 0.298039)
+
+[node name="Label" type="Label" parent="."]
+offset_left = 578.0
+offset_top = 277.0
+offset_right = 629.0
+offset_bottom = 300.0
+text = "Pause"
+
+[node name="RichTextLabel" type="RichTextLabel" parent="."]
+offset_left = 495.0
+offset_top = 328.0
+offset_right = 716.0
+offset_bottom = 368.0
+text = "click anywhere to continue"
